@@ -1,0 +1,20 @@
+.navbar {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hamburger {
+  display: none;
+}
+.hamburger.active {
+  display: block;
+}
+
+.closenav {
+  display: none;
+}
+.opennav {
+  padding: 5px 20px;
+  font-size: 20px;
+}

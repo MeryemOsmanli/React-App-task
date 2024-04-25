@@ -1,0 +1,18 @@
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
+}
+.box_container {
+  width: 100%;
+  display: flex;
+  // background-color: red;
+  margin: 20px 0;
+  flex-direction: column;
+  .card_box {
+    border: 1px solid black;
+    padding: 2rem;
+    width: 20%;
+    background-color: blue;
+  }
+}

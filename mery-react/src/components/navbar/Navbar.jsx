@@ -1,6 +1,5 @@
 import React from "react";
 import "./navbarStyle.css";
-import "./NavbarScript";
 
 function Navbar() {
   return (
@@ -37,7 +36,9 @@ function Navbar() {
               <p className="nav_phone">123-489-9381</p>
             </div>
             <button class="navbtn">
-              <div>Menu</div>
+              <div>
+                Menu <i className="fa-solid fa-bars"></i>
+              </div>
             </button>
           </div>
         </nav>

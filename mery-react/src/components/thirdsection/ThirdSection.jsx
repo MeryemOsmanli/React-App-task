@@ -2,6 +2,7 @@ import React from "react";
 import "./thirdsecStyle.css";
 
 function ThirdSection() {
+  const stylesss = { color: "blue" };
   return (
     <div>
       {/* third section start  */}
@@ -16,7 +17,7 @@ function ThirdSection() {
         <div className="third_contain container">
           <div className="services_box">
             <div className="services_img">
-              <div>200 x 200</div>
+              <div style={{ color: "red" }}>200 x 200</div>
             </div>
             <div className="services_text">
               <h2>On Time Services</h2>
@@ -29,7 +30,7 @@ function ThirdSection() {
           </div>
           <div className="services_box">
             <div className="services_img">
-              <div>200 x 200</div>
+              <div style={stylesss}>200 x 200</div>
             </div>
             <div className="services_text">
               <h2>On Time Services</h2>
@@ -94,6 +95,7 @@ function ThirdSection() {
           </div>
         </div>
       </section>
+
       {/* third section end  */}
     </div>
   );
