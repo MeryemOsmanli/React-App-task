@@ -9,16 +9,16 @@ function Input() {
     alert(myInp);
   }
 
-  //   function handleInp(e, setState) {
-  //     setState(e.target.value);
-  //   }
+  function handleInp(e, setState) {
+    setState(e.target.value);
+  }
   return (
     <div>
       <input
         type="text"
         value={myInp}
-        // onChange={(e) => handleInp(e, setmyInp)}
-        onChange={(e) => setmyInp(e.target.value)}
+        onChange={(e) => handleInp(e, setmyInp)}
+        // onChange={(e) => setmyInp(e.target.value)}
       />
       <button onClick={() => handleButton()}>show</button>
     </div>

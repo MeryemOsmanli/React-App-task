@@ -1,6 +1,10 @@
 import "./App.css";
+import ModeChange from "./components/dark-light mode/ModeChange";
+// import EditTodo from "./components/edit/EditTodo";
+// import CompleteTodo from "./components/complete/CompleteTodo";
+// import DeleteTodos from "./components/deletetodos/DeleteTodos";
 // import Input from "./components/input/Input";
-import ThreeInput from "./components/threeinput/ThreeInput";
+// import ThreeInput from "./components/threeinput/ThreeInput";
 // import Todos from "./components/todos/Todos";
 // import Navbar from "../src/components/navbar/Navbar";
 // import Container from "./components/container/Container";
@@ -15,7 +19,11 @@ function App() {
         {/* <Navbar /> */}
         {/* <Input /> */}
         {/* <Todos /> */}
-        <ThreeInput />
+        {/* <ThreeInput /> */}
+        {/* <DeleteTodos /> */}
+        {/* <CompleteTodo /> */}
+        {/* <EditTodo /> */}
+        <ModeChange />
       </div>
     </>
   );

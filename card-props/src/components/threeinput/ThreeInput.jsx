@@ -2,15 +2,6 @@ import React from "react";
 import { useState } from "react";
 
 function ThreeInput() {
-  //   const [myInp, setmyInp] = useState("");
-
-  //   const [myTodos, setmyTodos] = useState([]);
-
-  //   function handleBtn() {
-  //     setmyTodos([...myTodos, myInp]);
-  //     setmyInp("");
-  //     console.log(myInp);
-  //   }
   const [myinp1, setmyinp1] = useState("");
   const [myinp2, setmyinp2] = useState("");
   const [myinp3, setmyinp3] = useState("");
@@ -24,7 +15,6 @@ function ThreeInput() {
         myinp3,
       },
     ]);
-    //     setmyInp("");
   }
   console.log(todos);
   return (
