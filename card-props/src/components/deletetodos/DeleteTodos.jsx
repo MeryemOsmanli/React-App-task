@@ -21,6 +21,7 @@ function DeleteTodos() {
     console.log(updatedTodos);
     setMyTodos(updatedTodos);
   };
+  
   return (
     <div>
       <input

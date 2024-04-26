@@ -1,5 +1,6 @@
 import "./App.css";
 import ModeChange from "./components/dark-light mode/ModeChange";
+import FetchData from "./components/fetchdata/FetchData";
 // import EditTodo from "./components/edit/EditTodo";
 // import CompleteTodo from "./components/complete/CompleteTodo";
 // import DeleteTodos from "./components/deletetodos/DeleteTodos";
@@ -23,7 +24,8 @@ function App() {
         {/* <DeleteTodos /> */}
         {/* <CompleteTodo /> */}
         {/* <EditTodo /> */}
-        <ModeChange />
+        {/* <ModeChange /> */}
+        <FetchData/>
       </div>
     </>
   );
