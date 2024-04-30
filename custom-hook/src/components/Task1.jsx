@@ -6,13 +6,13 @@ function Task1() {
   useEffect(() => {
     getAllInformation();
   }, []);
-
+// butun datanin fetch edilmesi 
   async function getAllInformation() {
     const res = await fetch("https://northwind.vercel.app/api/products");
     const data = await res.json();
     setInformation(data);
   }
-
+// artmaya gore sort olunmasi 
   function sortInc(property) {
     setInformation(
       information.toSorted((a, b) =>
@@ -20,6 +20,7 @@ function Task1() {
       )
     );
   }
+  // azalmaya gore sort olunmasi 
   function sortDec(property) {
     setInformation(
       information.toSorted((a, b) =>
@@ -42,6 +43,7 @@ function Task1() {
       <br />
       <br />
       <br />
+      {/* fetch edilib gelen datanin ekranda gorunmesi  */}
       <div>
         {information
           .filter((x) => x.name.toLowerCase().includes(search.toLowerCase()))

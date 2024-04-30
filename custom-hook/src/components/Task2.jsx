@@ -6,10 +6,12 @@ function Task2() {
   // const [todo, setTodo] = useState([]);
   // const [myInp, setmyInp] = useLocalStorage("myInp", "");
   const [todo, setTodo] = useLocalStorage("todoList", []);
+  // todo nun add edilmesi
   function handleAdd() {
     setTodo([...todo, myInp]);
     setmyInp("");
   }
+  // todo n un delete olunmasi
   function handleDelete(index) {
     setTodo(todo.filter((_, i) => i !== index));
   }
@@ -23,6 +25,7 @@ function Task2() {
         onChange={(e) => setmyInp(e.target.value)}
       />
       <button onClick={() => handleAdd()}>Add</button>
+      {/* todolarin ekranda gorunmesi  */}
       <div>
         {todo.map((x, index) => (
           <div key={index}>
