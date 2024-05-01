@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Lora, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+.container {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 100px;
+}
+
+.hero {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg");
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  text-align: center;
+}
+.hero .hero_section_text h1 {
+  font-size: 80px;
+}
+.hero .hero_section_text p {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.hero_content {
+  max-width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  margin: 20px;
+}
+.hero_content div:hover {
+  color: #0085a1;
+}
+.hero_content div {
+  width: 60%;
+  margin: 40px;
+  padding: 30px;
+  color: black;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.594);
+}
+.hero_content div h3 {
+  font-size: 35px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.hero_content div h4 {
+  font-size: 27px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.hero_content div p {
+  font-size: 15px;
+  font-style: italic;
+  color: gray;
+}
+.hero_content div p .start_bootstrap_a {
+  color: black;
+}
+.hero_content div p .start_bootstrap_a:hover {
+  color: rgb(82, 133, 244);
+}
+
+.hero_button {
+  width: 100%;
+  min-height: 100px;
+  background-color: white;
+  display: flex;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.594);
+}
+.hero_button div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero_button div button {
+  color: white;
+  background-color: #0085a1;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.hero_button div button:hover {
+  background-color: #006e84;
+}
+@media only screen and (max-width: 1230px) {
+  .hero_content div {
+    width: 70%;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .hero_content {
+    margin: 20px;
+  }
+  .hero_content div {
+    width: 80%;
+  }
+  .hero_content div h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .hero {
+    min-height: 400px;
+  }
+  .hero .hero_section_text h1 {
+    font-size: 45px;
+  }
+  .hero .hero_section_text p {
+    font-size: 20px;
+  }
+  .hero_content {
+    width: 100%;
+    margin: 20px;
+  }
+  .hero_content div {
+    width: 70%;
+  }
+  .hero_content div h3 {
+    font-size: 25px;
+  }
+  .hero_content div h4 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .hero_content.container {
+    padding: 0px;
+  }
+  .hero_content {
+    margin: 20px;
+  }
+  .hero_content div {
+    width: 60%;
+    margin: 20px;
+  }
+  .hero_content div h3 {
+    font-size: 20px;
+  }
+  .hero_content div h4 {
+    font-size: 17px;
+  }
+  .hero_content div p {
+    font-size: 10px;
+  }
+  .hero_button div button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .hero {
+    min-height: 300px;
+  }
+  .hero .hero_section_text h1 {
+    font-size: 30px;
+  }
+  .hero .hero_section_text p {
+    font-size: 10px;
+  }
+  .hero_content {
+    padding: 10px;
+  }
+  .hero_content div {
+    width: 50%;
+  }
+  .hero_content div h3 {
+    font-size: 15px;
+  }
+  .hero_content div h4 {
+    font-size: 13px;
+  }
+  .hero_content div p {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .hero_content div h3 {
+    font-size: 10px;
+  }
+  .hero_content div h4 {
+    font-size: 13px;
+  }
+}
