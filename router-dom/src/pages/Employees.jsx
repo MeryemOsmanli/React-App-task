@@ -11,6 +11,13 @@ function Employees() {
     const data = await res.json();
     setInformation(data);
   }
+  async function handleDelete(id) {
+    const res = await fetch("https://northwind.vercel.app/api/products/" + id, {
+      method: "delete",
+    });
+    const data = await res.json();
+    await getAllInformation();
+  }
   return (
     <>
       Employees
@@ -24,8 +31,9 @@ function Employees() {
             <tr key={x.id} style={{ border: "1px solid black" }}>
               <td style={{ border: "1px solid black" }}>{x.name}</td>
               <td style={{ border: "1px solid black" }}>{x.unitPrice}</td>
-
-              {/* <td style={{ border: "1px solid black" }}></td> */}
+              <td>
+                <button onClick={() => handleDelete(x.id)}>delete</button>
+              </td>
             </tr>
           ))}
         </tbody>

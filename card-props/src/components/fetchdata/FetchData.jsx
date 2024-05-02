@@ -33,6 +33,7 @@ function FetchData() {
     const data = await res.json();
     await getAllInformation();
   }
+
   function handleSubmit(e) {
     e.preventDefault();
     let newObj = {
